@@ -26,7 +26,6 @@
       color: rgba(255,255,255,0.6);
     }
 
-    /* Rótulo oscuro que usa CSS Custom Properties*/
     rotulo-ucr.oscuro {
       --rotulo-bg:           #1a1a2e;
       --rotulo-header-color: #e94560;
@@ -47,9 +46,6 @@
 </head>
 <body>
 
-  <!-- ══════════════════════════════════════
-       AFICHE 1: versión original con slots
-       ══════════════════════════════════════ -->
   <afiche-ucr class="original" qr-data="https://www.ucr.ac.cr">
 
     <!-- slot="titulo": cambia las cajas del encabezado -->
@@ -72,7 +68,6 @@
       ACOMPAÑA
     </span>
 
-    <!-- slot="mensaje": cambia el texto del cuerpo -->
     <p slot="mensaje" style="font-family:'Poppins',sans-serif;font-size:1rem;color:rgba(0,0,0,0.55)">
       El respeto no se negocia
     </p>
@@ -80,41 +75,30 @@
       ¡Pará ya de acosar!
     </h2>
 
-    <!-- slot="qr-texto": texto sobre el QR -->
     <p slot="qr-texto"
        style="font-family:'Poppins',sans-serif;font-size:0.82rem;color:rgba(255,255,255,0.9);line-height:1.5">
       Si necesitas ayuda,<br>escanea este QR.
     </p>
 
-    <!-- slot="iconos": emojis de la base (se pueden poner íconos SVG también) -->
     <span slot="iconos" style="font-size:90px;line-height:1">🐱</span>
     <span slot="iconos" style="font-size:90px;line-height:1">😺</span>
 
-    <!-- slot="label": texto del pie de página -->
     <span slot="label">UCR · Sede de Guanacaste</span>
 
   </afiche-ucr>
 
-
-  <!-- ══════════════════════════════════════════════════
-       RÓTULO 1: original con slots de encabezado y filas
-       ══════════════════════════════════════════════════ -->
   <rotulo-ucr>
 
-    <!-- slot="sede-nombre": nombre de la sede -->
     <span slot="sede-nombre">Sede de Guanacaste</span>
 
-    <!-- slot="sede-subtitulo": subtítulo del encabezado -->
     <span slot="sede-subtitulo">Dirección de instalaciones</span>
 
-    <!-- slot default: las filas de destinos -->
     <rotulo-fila destino="Aulas 5, 6, 7"                       direccion="➜"></rotulo-fila>
     <rotulo-fila destino="Apoyo Informático"                    direccion="➜"></rotulo-fila>
     <rotulo-fila destino="Servidores"                           direccion="➜"></rotulo-fila>
     <rotulo-fila destino="Laboratorio 1 y 2"                    direccion="➜"></rotulo-fila>
     <rotulo-fila destino="Coordinación Informática Empresarial" direccion="➜"></rotulo-fila>
 
-    <!-- slot="logo": logo del footer -->
     <span slot="logo" style="font-family:'Fredoka',sans-serif;font-size:1.6rem;letter-spacing:0.08em;color:#0d2a5c;display:block;text-align:center">
       UCR
       <small style="display:block;font-family:'Poppins',sans-serif;font-size:0.65rem;opacity:0.55;letter-spacing:0.06em;text-transform:uppercase">

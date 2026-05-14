@@ -1,23 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Poppins:wght@400;600&display=swap');
-
-/* ─────────────────────────────────────────
-   Tokens globales del sistema de diseño UCR
-   Estas variables se heredan hacia los
-   Shadow DOMs a través de CSS inheritance.
-   ───────────────────────────────────────── */
 :root {
-  /* Colores base */
+ 
   --color-amarillo: #e5b85c;
   --color-azul:     #3ec1d3;
   --color-morado:   #7a3eb1;
   --color-navy:     #0d2a5c;
   --color-blanco:   #ffffff;
 
-  /* Tipografías */
   --font-titulo: 'Fredoka', sans-serif;
   --font-cuerpo: 'Poppins', sans-serif;
 
-  /* ── Tokens para <afiche-ucr> ── */
   --afiche-bg:          var(--color-amarillo);
   --afiche-accent:      var(--color-morado);
   --afiche-tag-azul:    var(--color-azul);
@@ -27,7 +19,6 @@
   --afiche-width:       400px;
   --afiche-radius:      6px;
 
-  /* ── Tokens para <rotulo-ucr> ── */
   --rotulo-bg:           var(--color-navy);
   --rotulo-header-color: var(--color-azul);
   --rotulo-footer-bg:    #f2f4f8;
@@ -37,7 +28,6 @@
   --rotulo-font-titulo:  var(--font-titulo);
   --rotulo-font-cuerpo:  var(--font-cuerpo);
 
-  /* ── Tokens para <rotulo-fila> ── */
   --fila-bg:          transparent;
   --fila-bg-hover:    rgba(255,255,255,0.12);
   --fila-color:       white;
@@ -45,14 +35,12 @@
   --fila-font-size:   1rem;
 }
 
-/* ─── Reset mínimo ─── */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-/* ─── Layout del body ─── */
 body {
   background: #e8e8e8;
   font-family: var(--font-cuerpo);
